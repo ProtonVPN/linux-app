@@ -40,6 +40,7 @@ RUN pacman -Syu --noconfirm \
     python-pyopenssl \
     python-bcrypt \
     python-gnupg \
+    python-systemd \
     && python3 -m pip install --upgrade sentry-sdk==0.10.2 \
     && useradd -ms /bin/bash user \
     && usermod -a -G wheel user \
