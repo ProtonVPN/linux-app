@@ -91,7 +91,7 @@ class PremiumCountries():
 
         title.content = "Smart Routing"
         description.content = "This technology allows ProtonVPN to provide higher" \
-            "speed and security in difficult-to-server countries."
+            "speed and security in difficult-to-serve countries."
         view_more_link.label = "Learn more"
         view_more_link.url = "https://protonvpn.com/support/smart-routing//"
 
