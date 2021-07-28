@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import gi
 from math import pi
 gi.require_version('Gtk', '3.0')
