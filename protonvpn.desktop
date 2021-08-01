@@ -7,3 +7,4 @@ Icon=protonvpn-logo
 StartupWMClass=Protonvpn
 Comment=ProtonVPN GUI client
 Categories=Network;
+Keywords=vpn;
