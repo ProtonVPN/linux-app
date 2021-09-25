@@ -66,7 +66,7 @@ class LoginViewModel:
             connection_error = str(e)
         except (exceptions.ProtonVPNException, Exception) as e:
             logger.exception(e)
-            connection_error = "Unknown error occured. If the issue persists, " \
+            connection_error = "Unknown error occurred. If the issue persists, " \
                 "please contact support."
 
         if connection_error:
