@@ -46,11 +46,11 @@ RUN pacman -Syu --noconfirm \
     && usermod -a -G wheel user \
     && usermod -a -G network user \
     && echo '%wheel ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
-    && git clone --single-branch --branch $git_branch $git_repo_client \
+    && git clone --depth=1 --single-branch --branch $git_branch $git_repo_client \
     && cd proton-python-client && pip3 install -e . \
     && rm -rf .git \
     && cd .. \
-    && git clone --single-branch --branch $git_branch $git_repo_lib \
+    && git clone --depth=1 --single-branch --branch $git_branch $git_repo_lib \
     && cd protonvpn-nm-lib && pip3 install -e . \
     && rm -rf .git && cd ..
 

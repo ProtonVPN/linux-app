@@ -52,11 +52,11 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install \
     && usermod -a -G sudo user \
     && echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
-RUN git clone --single-branch --branch $git_branch $git_repo_client \
+RUN git clone --depth=1 --single-branch --branch $git_branch $git_repo_client \
     && cd proton-python-client && pip3 install -e . \
     && rm -rf .git \
     && cd .. \
-    && git clone --single-branch --branch $git_branch $git_repo_lib \
+    && git clone --depth=1 --single-branch --branch $git_branch $git_repo_lib \
     && cd protonvpn-nm-lib && pip3 install -e . \
     && rm -rf .git && cd ..
 
