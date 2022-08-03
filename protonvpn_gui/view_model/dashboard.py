@@ -189,7 +189,7 @@ class DashboardViewModel:
         return True
 
     def __display_new_brand_dialog_if_not_opened(self):
-        print("Running display enw brand dilaog")
+        print("Running display new brand dialog")
         print("protonvpn.get_settings().new_brand", protonvpn.get_settings().new_brand)
         if protonvpn.get_settings().new_brand == NotificationStatusEnum.NOT_OPENED:
             self.state.on_next(
