@@ -1,5 +1,5 @@
 %define unmangled_name protonvpn-gui
-%define logo_name protonvpn-logo.png
+%define logo_name protonvpn-logo.svg
 %define desktop_name protonvpn.desktop
 %define version 1.12.0
 %define release 1
