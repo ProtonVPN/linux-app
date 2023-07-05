@@ -10,7 +10,7 @@ def _delay_subscription(duetime: typing.AbsoluteOrRelativeTime,
     def delay_subscription(source: Observable) -> Observable:
         """Time shifts the observable sequence by delaying the subscription.
 
-        Exampeles.
+        Examples.
             >>> res = source.delay_subscription(5)
 
         Args:

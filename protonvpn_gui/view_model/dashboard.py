@@ -41,7 +41,7 @@ class DashboardViewModel:
 
     _conn_state_msg = {
         VPNConnectionStateEnum.UNKNOWN: "State of "
-        "VPN connection is unkown.",
+        "VPN connection is unknown.",
         VPNConnectionStateEnum.NEEDS_CREDENTIALS: "The VPN "
         "connection is missing credentials.",
         VPNConnectionStateEnum.FAILED: "Failed to "
@@ -85,7 +85,7 @@ class DashboardViewModel:
         "Could not create the software device link.",
         VPNConnectionReasonEnum.VPN_DEVICE_DISAPPEARED: "The device this "
         "connection depended on disappeared.",
-        VPNConnectionReasonEnum.UNKNOWN_ERROR: "Unknown reason occured."
+        VPNConnectionReasonEnum.UNKNOWN_ERROR: "Unknown reason occurred."
     }
 
     ks_quick_setting = {
@@ -371,7 +371,7 @@ class DashboardViewModel:
         This method should always be used when connecting to
         VPN. Ideally should be run within a python thread.
 
-        It initially attemps to setup the connection, then updated
+        It initially attempts to setup the connection, then updated
         the UI accordingly and only the proceeds to connect to the VPN.
         This is done so that the user is aware of where the connections
         is made to during the ConnectInProgressInfo() state.
@@ -459,7 +459,7 @@ class DashboardViewModel:
         except (exceptions.ProtonVPNException, Exception) as e:
             logger.exception(e)
             setup_connection_error = \
-                "\nAn unknown error has occured. Please ensure that you have " \
+                "\nAn unknown error has occurred. Please ensure that you have " \
                 "internet connectivity." \
                 "\nIf the issue persists, please contact support."
             display_troubleshoot_dialog = True
@@ -678,7 +678,7 @@ class DashboardViewModel:
     def __on_monitor_vpn(self, *_):
         """Monitor VPN connection.
 
-        This methods monitors a VPN connection state from withing
+        This methods monitors a VPN connection state from within
         a thread. It is mainly used to track when a VPN connection
         is stopped and/or removed.
         """

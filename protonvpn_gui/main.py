@@ -28,7 +28,7 @@ from .view.login import LoginView
 
 
 class ProtonVPNGUI(Gtk.Application):
-    """Proton VPN GTK Applcation.
+    """Proton VPN GTK Application.
 
     Windows are composite objects. Follows
     MVVM pattern.

@@ -526,7 +526,7 @@
                     <child internal-child="accessible">
                       <object class="AtkObject" id="locations_label-atkobject">
                         <property name="AtkObject::accessible-name" translatable="yes">_server_locations</property>
-                        <property name="AtkObject::accessible-description" translatable="yes">Ammount of server locations</property>
+                        <property name="AtkObject::accessible-description" translatable="yes">Amount of server locations</property>
                         <property name="AtkObject::accessible-role" translatable="yes">label</property>
                       </object>
                     </child>

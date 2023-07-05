@@ -35,7 +35,7 @@ def _publish(mapper: Optional[Mapper] = None) -> Callable[[Observable], Connecta
 
 
 def _share() -> Callable[[Observable], Observable]:
-    """Share a single subscription among multple observers.
+    """Share a single subscription among multiple observers.
 
     Returns a new Observable that multicasts (shares) the original
     Observable. As long as there is at least one Subscriber this

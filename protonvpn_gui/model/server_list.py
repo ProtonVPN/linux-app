@@ -17,7 +17,7 @@ class ServerList:
 
     Methods:
         generate_list()
-            generates the neccesary elements for server listing and
+            generates the necessary elements for server listing and
             stores them in server_list
     """
     def __init__(self):

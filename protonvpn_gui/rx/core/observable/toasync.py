@@ -26,7 +26,7 @@ def _to_async(func: Callable,
             specified, defaults to Scheduler.timeout.
 
     Returns:
-        Aynchronous function.
+        Asynchronous function.
     """
 
     _scheduler = scheduler or TimeoutScheduler.singleton()

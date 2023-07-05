@@ -227,7 +227,7 @@ class QuitDialog:
         self.dialog_view = DialogView(application)
         self.dialog_view.headerbar_label.set_text("VPN Connection Active")
         self.dialog_view.content_label.content = "Quitting the application " \
-            "will disconnnect the active VPN connection.\n\n" \
+            "will disconnect the active VPN connection.\n\n" \
             "Do you want to continue ?"
 
         self.dialog_view.main_button.connect(
@@ -340,7 +340,7 @@ class WebView:
         self.__webview.set_property("height-request", self.__default_webview_height)
         self.__webview.set_property("width-request", self.__dialog_view.get_size()[0] + 10)
 
-        # ## Can be helpfull during debugging
+        # ## Can be helpful during debugging
         # settings = self.__webview.get_settings()
         # settings.set_enable_developer_extras(True)
         # settings.set_allow_top_navigation_to_data_urls(True)
@@ -436,7 +436,7 @@ class TroubleshootDialog:
 
     def __antivirus_widget(self):
         title = "Antivirus interference"
-        _description = "Temporarly disable or remove your antivirus software."
+        _description = "Temporarily disable or remove your antivirus software."
         description = WidgetFactory.textview("default", _description)
 
         self.__generate_widget(title, description)

@@ -45,14 +45,14 @@ class DashboardView(Gtk.ApplicationWindow):
     attempts to match the instance state defined in dashboard_view_model.
     The view types are divided into own classes which receive the current
     instance of DashboardView and the proceed to manipulate the UI. Creating
-    new classes was preffered instead of methods to facilitate code reading
+    new classes was preferred instead of methods to facilitate code reading
     and clear separation of view states.
 
 
     Once connections are started or ended, the UI will react accordingly.
     Also, background processes started with Glib.timeout_add_seconds are
     constantly monitored and tracked to make sure that there are no
-    multiple background simillar processes running at the same time.
+    multiple background similar processes running at the same time.
     Ie: Two existing processes which update the network speed each second.
     """
     __gtype_name__ = 'DashboardView'
@@ -183,7 +183,7 @@ class DashboardView(Gtk.ApplicationWindow):
     def render_view_state(self, state):
         """Render view state.
 
-        State is continuosly being monitored. The state monitor is
+        State is continuously being monitored. The state monitor is
         initialized in the __init__ method.
         Based on each instance, it will call a specific class, passing
         the instance of this current object and the state, so that the
@@ -576,7 +576,7 @@ class DashboardView(Gtk.ApplicationWindow):
     def add_background_glib(self, glib_source_type: GLibEventSourceEnum):
         """Add background GLib process.
 
-        It intially checks if there is an existent process, so that I does
+        It initially checks if there is an existent process, so that I does
         not create duplicates (or even more).
 
         Args:
@@ -598,7 +598,7 @@ class DashboardView(Gtk.ApplicationWindow):
     def remove_background_glib(self, glib_source_type: GLibEventSourceEnum):
         """Remove background GLib process.
 
-        It intially checks there is an existent process, thus avoiding
+        It initially checks there is an existent process, thus avoiding
         any unnenecessary errors/warnings or crashes.
 
         Args:

@@ -88,7 +88,7 @@ class ServerListViewModel:
 
         This method is and should be executed within a python thread.
 
-        The numbers below were defined arbitrarly, meaning that we could easily change then
+        The numbers below were defined arbitrarily, meaning that we could easily change then
         to any other values here and inside `__finish_on_update_server_load`, as the meaning
         is only for us, as the Gio.Task doesn't care about the value, as long as it's `int`.
         """

@@ -14,7 +14,7 @@ def run(source: Observable) -> Any:
 
     Subscribes to the observable source. Then blocks and waits for the
     observable source to either complete or error. Returns the
-    last value emitted, or throws exception if any error occured.
+    last value emitted, or throws exception if any error occurred.
 
     Examples:
         >>> result = run(source)
@@ -25,7 +25,7 @@ def run(source: Observable) -> Any:
     Raises:
         SequenceContainsNoElementsError: if observable completes
             (on_completed) without any values being emitted.
-        Exception: raises exception if any error (on_error) occured.
+        Exception: raises exception if any error (on_error) occurred.
 
     Returns:
         The last element emitted from the observable.

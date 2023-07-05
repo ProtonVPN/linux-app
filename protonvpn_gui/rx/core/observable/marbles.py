@@ -135,7 +135,7 @@ def parse(string: str,
     """Convert a marble diagram string to a list of messages.
 
     Each character in the string will advance time by timespan
-    (exept for space). Characters that are not special (see the table below)
+    (except for space). Characters that are not special (see the table below)
     will be interpreted as a value to be emitted. numbers will be cast
     to int or float.
 

@@ -223,7 +223,7 @@ def do_finally(finally_action: Callable) -> Callable[[Observable], Observable]:
     when completion, an error, or disposal terminates an operation.
 
     Note this operator will strive to execute the finally_action once,
-    and prevent any redudant calls
+    and prevent any redundant calls
 
     Args:
         finally_action -- Action to invoke after on_complete, on_error,
