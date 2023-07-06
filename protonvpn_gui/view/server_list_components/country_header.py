@@ -27,7 +27,7 @@ class CountryHeader:
         """Create country header/separator for respective user tier:
 
         Args:
-            server_list: object that can access the ammount of servers
+            server_list: object that can access the amount of servers
                 for each tier and the actual user tier.
             current_country: country_item object
         """

@@ -207,12 +207,12 @@ class TextViewFactory(WidgetFactory):
 
     @property
     def ident_h(self):
-        """Get line identation."""
+        """Get line indentation."""
         return self.__widget.get_indent()
 
     @ident_h.setter
     def ident_h(self, newvalue):
-        """Set line identation."""
+        """Set line indentation."""
         return self.__widget.set_indent(newvalue)
 
     @property

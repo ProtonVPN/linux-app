@@ -46,7 +46,7 @@ def _first_or_default(predicate: Optional[Predicate] = None,
             exists.  If not specified, defaults to None.
 
     Returns:
-        A function that takes an observable source and reutrn an
+        A function that takes an observable source and return an
         observable sequence containing the first element in the
         observable sequence that satisfies the condition in the
         predicate, or a default value if no such element exists.

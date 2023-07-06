@@ -166,7 +166,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue May 04 2021 Proton Technologies AG <opensource@proton.me> 0.6.0-1
 - Fix quick connect loop
 - Add possibility to login upon pressing Enter after filling in credentials on login window
-- Make possibile to add extra content to dialog via a method
+- Make possible to add extra content to dialog via a method
 - Modify connecting overlay message display
 - Display an appropriate error on failed login
 - Other color and styling changes 

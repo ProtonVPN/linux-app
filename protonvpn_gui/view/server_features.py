@@ -223,7 +223,7 @@ class PlusFeatures:
         self.__view.display()
 
     def __generate_widgets(self, application, country):
-        """Genrate widgets for the various features and appends to internal list.
+        """Generate widgets for the various features and appends to internal list.
 
         Args:
             application (Gtk.Application): application object

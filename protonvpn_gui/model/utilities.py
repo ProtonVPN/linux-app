@@ -52,7 +52,7 @@ class Utilities:
         """Convert network speed.
 
         Converts and return
-        the speed  easy readeable units:
+        the speed easy readable units:
             - Bytes per second
             - Kilobytes per second
             - Megabytes per second

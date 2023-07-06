@@ -11,7 +11,7 @@ def _with_latest_from(*sources: Observable) -> Callable[[Observable], Observable
     Merges the specified observable sequences into one observable
     sequence by creating a tuple only when the first
     observable sequence produces an element. The observables can be
-    passed either as seperate arguments or as a list.
+    passed either as separate arguments or as a list.
 
     Examples:
         >>> op = with_latest_from(obs1)
