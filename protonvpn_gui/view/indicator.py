@@ -98,9 +98,6 @@ class DummyIndicator(MetaIndicator):
 
 class ProtonVPNIndicator(MetaIndicator):
     _type = "indicator"
-    ON_PATH = os.path.join(ICON_DIR_PATH, VPN_TRAY_ON)
-    OFF_PATH = os.path.join(ICON_DIR_PATH, VPN_TRAY_OFF)
-    ERROR_PATH = os.path.join(ICON_DIR_PATH, VPN_TRAY_ERROR)
 
     def __init__(self, application):
         gi.require_version("AppIndicator3", "0.1")
@@ -114,8 +111,8 @@ class ProtonVPNIndicator(MetaIndicator):
             appindicator.IndicatorCategory.APPLICATION_STATUS)
         self.__indicator.set_status(appindicator.IndicatorStatus.ACTIVE)
         self.__indicator.set_menu(self.__menu)
-
-        self.__indicator.set_icon_full(self.OFF_PATH, "protonvpn")
+        self.__indicator.set_icon_theme_path(ICON_DIR_PATH)
+        self.__indicator.set_icon_full(VPN_TRAY_OFF, "protonvpn")
 
     @property
     def application(self):
@@ -204,12 +201,12 @@ class ProtonVPNIndicator(MetaIndicator):
             logger.exception(e)
 
     def set_connected_state(self):
-        self.__indicator.set_icon_full(self.ON_PATH, "protonvpn")
+        self.__indicator.set_icon_full(VPN_TRAY_ON, "protonvpn")
         self.__quick_connect_item.hide()
         self.__disconnect_item.show()
 
     def set_disconnected_state(self, hide_quick_connect=False):
-        self.__indicator.set_icon_full(self.OFF_PATH, "protonvpn")
+        self.__indicator.set_icon_full(VPN_TRAY_OFF, "protonvpn")
         self.__disconnect_item.hide()
         if hide_quick_connect:
             self.__quick_connect_item.hide()
@@ -218,7 +215,7 @@ class ProtonVPNIndicator(MetaIndicator):
         self.__quick_connect_item.show()
 
     def set_error_state(self):
-        self.__indicator.set_icon_full(self.ERROR_PATH, "protonvpn")
+        self.__indicator.set_icon_full(VPN_TRAY_ERROR, "protonvpn")
 
     def setup_reply_subject(self):
         self.__indicator_login_action = ReplaySubject(buffer_size=1)
