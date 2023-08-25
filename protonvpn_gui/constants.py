@@ -17,9 +17,9 @@ LOGGER_NAME = "protonvpn-gui"
 
 
 protonvpn_logo = "protonvpn-logo.png"
-VPN_TRAY_ON = "vpn-connected.svg"
-VPN_TRAY_OFF = "vpn-disconnected.svg"
-VPN_TRAY_ERROR = "vpn-no-network.svg"
+VPN_TRAY_ON = "vpn-connected"
+VPN_TRAY_OFF = "vpn-disconnected"
+VPN_TRAY_ERROR = "vpn-no-network"
 
 KILLSWITCH_ICON_SET = {
     DashboardKillSwitchIconEnum.OFF:
