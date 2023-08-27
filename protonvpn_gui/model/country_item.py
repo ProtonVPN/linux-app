@@ -118,7 +118,7 @@ class CountryItem(CountryItemFactory):
         servers: list
             contains a list of ServerItem
 
-    All the properties can be reacheched from the outside, but only two can be
+    All the properties can be reached from the outside, but only two can be
     set outside of it's own class, entry_country_code and country_name.
 
     entry_country_code: this is set in the class that builds this object,
