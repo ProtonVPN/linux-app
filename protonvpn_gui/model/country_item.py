@@ -118,14 +118,14 @@ class CountryItem(CountryItemFactory):
         servers: list
             contains a list of ServerItem
 
-    All the properties can be reacheched from the outside, but only two can be
+    All the properties can be reached from the outside, but only two can be
     set outside of it's own class, entry_country_code and country_name.
 
     entry_country_code: this is set in the class that builds this object,
     thus avoiding to pass any the country code as an argument.
 
-    country_name: since country names are dependt on
-    heir translation (view level) so it does not make sense to hard-code
+    country_name: since country names are dependent on
+    their translation (view level) so it does not make sense to hard-code
     it here. Also, this property, after being set, shall be used to
     sort countries in alphabetical order.
     """
